@@ -4,6 +4,23 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script>
+			(function () {
+				try {
+					var theme = localStorage.getItem('theme');
+					var dark =
+						theme === 'dark' ||
+						(!theme && window.matchMedia('(prefers-color-scheme: dark)').matches);
+					if (dark) {
+						document.documentElement.classList.add('dark');
+						document.body.classList.add('dark');
+					} else {
+						document.documentElement.classList.remove('dark');
+						document.body.classList.remove('dark');
+					}
+				} catch (e) {}
+			})();
+		</script>
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
