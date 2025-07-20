@@ -24,7 +24,7 @@
 
 ```bash
 # Клонируйте репозиторий
- git clone https://github.com/FrankFMY/ToDo-With-Calculator-On-SveltKIT.git
+ git clone https://github.com/FrankFMY/ToDo-With-Calculator-On-SvelteKIT.git
  cd ToDo-With-Calculator-On-SveltKIT
 
 # Установите зависимости
