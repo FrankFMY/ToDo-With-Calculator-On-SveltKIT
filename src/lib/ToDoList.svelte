@@ -77,14 +77,14 @@
 </script>
 
 <div
-	class="mx-auto mt-4 w-full max-w-md rounded-xl bg-white p-4 shadow-md sm:mt-8 sm:p-6 dark:bg-gray-800"
+	class="mx-auto mt-4 w-full max-w-md rounded-xl bg-white p-4 shadow-md dark:bg-gray-800 sm:mt-8 sm:p-6"
 >
 	<h2 class="mb-4 text-center text-2xl font-bold dark:text-gray-100">
 		To-Do & Calculator on SvelteKIT
 	</h2>
 	<div class="mb-4 flex flex-col gap-2 sm:flex-row">
 		<input
-			class="flex-1 rounded border px-3 py-2 focus:border-blue-400 focus:ring focus:outline-none dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100"
+			class="flex-1 rounded border px-3 py-2 focus:border-blue-400 focus:outline-none focus:ring dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100"
 			type="text"
 			placeholder="Новая задача..."
 			bind:value={newTodo}
@@ -100,7 +100,7 @@
 	</div>
 	<div class="mb-4 flex justify-center gap-2">
 		<button
-			class="rounded border px-3 py-1 text-sm font-medium transition focus:border-blue-400 focus:ring focus:outline-none {filter ===
+			class="rounded border px-3 py-1 text-sm font-medium transition focus:border-blue-400 focus:outline-none focus:ring {filter ===
 			'all'
 				? 'bg-blue-500 text-white'
 				: 'bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-gray-600'}"
@@ -108,7 +108,7 @@
 			aria-pressed={filter === 'all'}>Все</button
 		>
 		<button
-			class="rounded border px-3 py-1 text-sm font-medium transition focus:border-blue-400 focus:ring focus:outline-none {filter ===
+			class="rounded border px-3 py-1 text-sm font-medium transition focus:border-blue-400 focus:outline-none focus:ring {filter ===
 			'active'
 				? 'bg-blue-500 text-white'
 				: 'bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-gray-600'}"
@@ -116,7 +116,7 @@
 			aria-pressed={filter === 'active'}>Активные</button
 		>
 		<button
-			class="rounded border px-3 py-1 text-sm font-medium transition focus:border-blue-400 focus:ring focus:outline-none {filter ===
+			class="rounded border px-3 py-1 text-sm font-medium transition focus:border-blue-400 focus:outline-none focus:ring {filter ===
 			'completed'
 				? 'bg-blue-500 text-white'
 				: 'bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-gray-600'}"
@@ -133,7 +133,7 @@
 					<input type="checkbox" checked={todo.completed} onchange={() => toggleTodo(todo.id)} />
 					{#if editingId === todo.id}
 						<input
-							class="flex-1 rounded border px-2 py-1 focus:border-blue-400 focus:ring focus:outline-none dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100"
+							class="flex-1 rounded border px-2 py-1 focus:border-blue-400 focus:outline-none focus:ring dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100"
 							bind:value={editingText}
 							bind:this={editInputRef}
 							onkeydown={(e) => {
@@ -157,7 +157,7 @@
 					{/if}
 				</label>
 				<button
-					class="text-red-500 opacity-0 transition group-hover:opacity-100 hover:text-red-700 dark:text-red-400 dark:hover:text-red-300"
+					class="text-red-500 opacity-0 transition hover:text-red-700 group-hover:opacity-100 dark:text-red-400 dark:hover:text-red-300"
 					onclick={() => removeTodo(todo.id)}
 					aria-label="Удалить задачу"
 					>✕

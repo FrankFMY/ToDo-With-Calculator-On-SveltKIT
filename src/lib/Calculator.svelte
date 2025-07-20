@@ -54,7 +54,7 @@
 </script>
 
 <div
-	class="mx-auto w-full max-w-xs rounded-xl bg-white p-4 shadow-lg outline-none sm:max-w-sm sm:p-6 dark:bg-gray-800"
+	class="mx-auto w-full max-w-xs rounded-xl bg-white p-4 shadow-lg outline-none dark:bg-gray-800 sm:max-w-sm sm:p-6"
 	bind:this={containerRef}
 	aria-label="Калькулятор"
 	role="region"

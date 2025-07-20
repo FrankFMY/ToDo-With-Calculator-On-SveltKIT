@@ -35,7 +35,7 @@
 			</div>
 		</div>
 		{#if showCalculator}
-			<div class="mt-6 w-full max-w-xs md:mt-0 md:ml-6">
+			<div class="mt-6 w-full max-w-xs md:ml-6 md:mt-0">
 				<Calculator />
 			</div>
 		{/if}

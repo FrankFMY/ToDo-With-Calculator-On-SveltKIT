@@ -34,10 +34,10 @@
 		tabindex="-1"
 	>
 		<div
-			class="animate-fade-in max-w-full min-w-[320px] rounded-xl bg-white p-6 shadow-lg dark:bg-gray-900 dark:shadow-2xl"
+			class="animate-fade-in min-w-[320px] max-w-full rounded-xl bg-white p-6 shadow-lg dark:bg-gray-900 dark:shadow-2xl"
 		>
 			<button
-				class="absolute top-2 right-2 text-gray-400 hover:text-gray-700 dark:text-gray-500 dark:hover:text-gray-300"
+				class="absolute right-2 top-2 text-gray-400 hover:text-gray-700 dark:text-gray-500 dark:hover:text-gray-300"
 				onclick={() => dispatch('close')}
 				aria-label="Закрыть">✕</button
 			>
