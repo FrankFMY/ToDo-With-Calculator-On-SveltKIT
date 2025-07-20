@@ -25,7 +25,7 @@
 ```bash
 # Клонируйте репозиторий
  git clone https://github.com/FrankFMY/ToDo-With-Calculator-On-SvelteKIT.git
- cd ToDo-With-Calculator-On-SveltKIT
+ cd ToDo-With-Calculator-On-SvelteKIT
 
 # Установите зависимости
  npm install
